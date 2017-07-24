@@ -57,8 +57,8 @@ Step3：**使用**
         this.buildByData(this.data.data);
         this.buildPager(this.data.pageInfo);
     }
-	//设置分页
-	  BaseBlog.prototype.buildPager = function (pageInfo) {
+//设置分页
+BaseBlog.prototype.buildPager = function (pageInfo) {
         var self=this;
         self.pager=null;
         var pager = $("#" + this.options.pageContainer).data("page").refresh(params);
