@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分页组件</title>
+</head>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/bootstrap-pager.css">
+
+<body>
+   <div id="page-container-static-normal"></div>
+
+   <div id="page-container-static-big"></div>
+
+</body>
+<script src="jquery/jquery-1.8.3.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-pager.js"></script>
+<script>
+
+    //静态演示
+    $("#page-container-static-normal").page({
+         count:100,
+         theme:"normal"
+    });
+    $("#page-container-static-normal").on("pageChanged",function (event,params) {
+        console.log(params);
+        $(this).data("page").refresh(params);
+    })
+
+    //静态  大型图标样式
+    $("#page-container-static-big").page({
+        count:100,
+        maxPage:7,
+        theme:"big"
+    });
+    $("#page-container-static-big").on("pageChanged",function (event,params) {
+        console.log(params);
+        $(this).data("page").refresh(params);
+    })
+
+
+</script>
+</html>
