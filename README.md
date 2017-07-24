@@ -88,13 +88,13 @@ Step3：**使用**
  
   名称 | 参数 | 参数说明 | 方法说明
  ----|------|----
- refresh| pageInfo | 分页对象，含有pageNum和pageSize两个值 | 刷新分页
- init| | | 初始化
- drawPage| count,pageNum| 记录总数，当前页 | 分页渲染
- setPreviousButton|||设置`上一页`按钮状态
- setNextButton|||设置`下一页`按钮状态
- setActiveButton|||高亮显示当前选中页
- bindEvent|||为所有按钮绑定事件
+ refresh | pageInfo | 分页对象，含有pageNum和pageSize两个值 | 刷新分页
+ init | | | 初始化
+ drawPage | count,pageNum | 记录总数，当前页 | 分页渲染
+ setPreviousButton | | | 设置`上一页`按钮状态
+ setNextButton | | | 设置`下一页`按钮状态
+ setActiveButton | | | 高亮显示当前选中页
+ bindEvent | | | 为所有按钮绑定事件
 
 
 
